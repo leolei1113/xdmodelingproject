@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{99a98719-9aae-4c25-af33-39fe82690b82}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{82a387f0-fc68-4300-8576-ebd8c20b2ac5}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="ModelView">
+      <UniqueIdentifier>{7fe9d468-ad60-443e-82ef-18b1c7896323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{fdd509c8-7f5a-4e96-b115-1d888733a765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Popup">
+      <UniqueIdentifier>{1e6676ec-cca9-4bd4-8c3e-ee1f1893b4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Popup\Model">
+      <UniqueIdentifier>{498b6b45-d787-4b60-9b85-9d562123079d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Popup\Draw">
+      <UniqueIdentifier>{dee8172d-9c38-4586-bf75-2639b009a4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Popup\Other">
+      <UniqueIdentifier>{4922b6dd-a704-41ea-854b-5d55cc55c0e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_occView.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_occView.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="occView.cpp">
+      <Filter>ModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AddAttrModelDlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AddAttrModelDlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BooleanWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BooleanWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CuboidWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CuboidWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CylinderWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CylinderWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawModelDlg.cpp">
+      <Filter>Popup</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DrawModelDlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DrawModelDlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ElemWidgetFactory.cpp">
+      <Filter>Popup</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElemWidgetFactory.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElemWidgetFactory.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GetAttrModelDlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GetAttrModelDlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LineWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LineWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SphereWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SphereWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAttrModelDlg.cpp">
+      <Filter>Popup\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="BooleanWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CuboidWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="LineWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PointWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PointWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PointWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HyperbolaWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HyperbolaWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperbolaWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ParabolaWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ParabolaWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ParabolaWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EllipseWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EllipseWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipseWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SpiralWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SpiralWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HelixWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HelixWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HelixWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiLinesWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MultiLinesWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MultiLinesWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RectangularWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RectangularWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangularWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RegPolyhedronWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RegPolyhedronWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="RegPolyhedronWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TorusWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TorusWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TorusWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_InterPSplineWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_InterPSplineWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="InterPSplineWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="PrismWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PrismWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PrismWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FlareWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FlareWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FlareWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HelixSolidWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HelixSolidWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HelixSolidWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ExtrudeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ExtrudeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtrudeWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RevolWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RevolWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="RevolWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SweepWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SweepWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SweepWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThickenWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThickenWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ThickenWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ChamferWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChamferWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChamferWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FilletWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FilletWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FilletWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EraseModelDlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EraseModelDlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EraseModelDlg.cpp">
+      <Filter>Popup\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="GetAttrModelDlg.cpp">
+      <Filter>Popup\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="TranslateWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TranslateWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TranslateWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RotateWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RotateWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MirrorWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MirrorWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MirrorWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScaleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScaleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportModelDlg.cpp">
+      <Filter>Popup\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ExportModelDlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ExportModelDlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoftWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoftWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoftWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ConeWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EdgeOffsetWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EdgeOffsetWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeOffsetWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EdgeExtendWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EdgeExtendWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeExtendWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EdgeCombinationWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EdgeCombinationWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeCombinationWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeSplitWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EdgeSplitWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EdgeSplitWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EdgeIntersectionWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EdgeIntersectionWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeIntersectionWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FaceExtendWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FaceExtendWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceExtendWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FaceOffsetWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FaceOffsetWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceOffsetWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MeasureWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MeasureWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MeasureWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceSplitWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FaceSplitWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FaceSplitWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FaceIntersectionWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FaceIntersectionWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceIntersectionWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NurbsFaceWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NurbsFaceWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NurbsFaceWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceStitchWidget.cpp">
+      <Filter>Popup\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FaceStitchWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FaceStitchWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ShapeFixWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ShapeFixWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeFixWidget.cpp">
+      <Filter>Popup\Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindow.qrc">
+      <Filter>MainWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="occView.h">
+      <Filter>ModelView</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>MainWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.ui">
+      <Filter>MainWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DrawModelDlg.h">
+      <Filter>Popup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DrawModelDlg.ui">
+      <Filter>Popup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ElemWidgetFactory.h">
+      <Filter>Popup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AddAttrModelDlg.h">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AddAttrModelDlg.ui">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BooleanWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BooleanWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ConeWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ConeWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CuboidWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CuboidWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CylinderWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CylinderWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LineWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LineWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SphereWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SphereWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PointWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PointWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MultiPointsWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HyperbolaWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HyperbolaWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ParabolaWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ParabolaWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EllipseWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EllipseWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SpiralWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SpiralWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HelixWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HelixWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MultiLinesWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RectangularWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RectangularWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RegPolyhedronWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RegPolyhedronWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TorusWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TorusWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InterPSplineWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InterPSplineWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrismWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrismWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FlareWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FlareWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HelixSolidWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HelixSolidWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ExtrudeWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ExtrudeWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RevolWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RevolWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SweepWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SweepWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ThickenWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ThickenWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChamferWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChamferWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FilletWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FilletWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EraseModelDlg.h">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EraseModelDlg.ui">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GetAttrModelDlg.h">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GetAttrModelDlg.ui">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TranslateWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TranslateWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RotateWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RotateWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MirrorWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MirrorWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScaleWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScaleWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ExportModelDlg.h">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ExportModelDlg.ui">
+      <Filter>Popup\Other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoftWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoftWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeOffsetWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeOffsetWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeExtendWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeExtendWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeCombinationWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeCombinationWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeSplitWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeSplitWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeIntersectionWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EdgeIntersectionWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceExtendWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceExtendWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceOffsetWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceOffsetWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeasureWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeasureWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceSplitWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceSplitWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceIntersectionWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceIntersectionWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NurbsFaceWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NurbsFaceWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceStitchWidget.h">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FaceStitchWidget.ui">
+      <Filter>Popup\Draw</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ShapeFixWidget.h">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ShapeFixWidget.ui">
+      <Filter>Popup\Model</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_AddAttrModelDlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_BooleanWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ConeWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CuboidWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CylinderWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DrawModelDlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_GetAttrModelDlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LineWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SphereWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_PointWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MultiPointsWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_HyperbolaWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ParabolaWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EllipseWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SpiralWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_HelixWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RectangularWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RegPolyhedronWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TorusWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_InterPSplineWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_PrismWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FlareWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_HelixSolidWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ExtrudeWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RevolWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SweepWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ThickenWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ChamferWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FilletWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EraseModelDlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TranslateWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RotateWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MirrorWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ScaleWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ExportModelDlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LoftWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EdgeOffsetWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EdgeExtendWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EdgeCombinationWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EdgeSplitWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EdgeIntersectionWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FaceExtendWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FaceOffsetWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MeasureWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FaceSplitWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FaceIntersectionWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_NurbsFaceWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FaceStitchWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ShapeFixWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

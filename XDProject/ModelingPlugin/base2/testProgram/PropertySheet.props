@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <CASROOT>E:\SoftwareLists2\OCCT_VS2015_VTK8.0</CASROOT>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="CASROOT">
+      <Value>$(CASROOT)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

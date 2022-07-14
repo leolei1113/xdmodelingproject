@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{4ab82bf3-1336-46d9-a362-d91def8b72ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{4ef55acf-bcfa-4c5e-a1b0-7bcc9e4077eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Create">
+      <UniqueIdentifier>{80628a54-a36c-477b-8387-b8d45dcf335f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Operation">
+      <UniqueIdentifier>{27f9db2d-ccd4-4ae7-8e78-d8e6f2655db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppModel">
+      <UniqueIdentifier>{64a636df-aa55-4e49-a0ca-e12912b7af05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{964e2ea4-d26b-47cb-83eb-aac989f71f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCCExtension">
+      <UniqueIdentifier>{992b1356-ac1e-4d87-b87d-30144eb1c691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Others">
+      <UniqueIdentifier>{0985545d-a460-47cd-8de6-700cb1fc2842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseKernel">
+      <UniqueIdentifier>{e7ecdf8b-b981-40a7-a4f6-071bf855f161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseKernel\AcisKernel">
+      <UniqueIdentifier>{4d12d6af-81c2-4429-ace4-11f720ad1532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Assembly">
+      <UniqueIdentifier>{33b3f56f-a7b1-4729-b9c0-4489d06eeb74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OccApplication.h">
+      <Filter>AppModel</Filter>
+    </ClInclude>
+    <ClInclude Include="OccModel.h">
+      <Filter>AppModel</Filter>
+    </ClInclude>
+    <ClInclude Include="OccModelBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="LabelShapeAdapter.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="OccShapeBuilder.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="EdgeShapeBuilder.h">
+      <Filter>Utilities\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceShapeBuilder.h">
+      <Filter>Utilities\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidShapeBuilder.h">
+      <Filter>Utilities\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShapeBuilder.h">
+      <Filter>Utilities\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="IOShapeBuilder.h">
+      <Filter>Utilities\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="BooleanShapeBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumAndStruct.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="xdModelingHeader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FilletShapeBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="xdModelingDataType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AcisModelBuilder.h">
+      <Filter>BaseKernel\AcisKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="AcisModel.h">
+      <Filter>BaseKernel\AcisKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="AcisApplication.h">
+      <Filter>BaseKernel\AcisKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformShapeBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="exprtk.hpp">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SweepShapeBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="Geom_BoundedMathCurve.hxx">
+      <Filter>OCCExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetShapeBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeOperationBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="LabelUtilities.h">
+      <Filter>Utilities\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="OCCBasicTools.h">
+      <Filter>Utilities\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeUtilities.h">
+      <Filter>Utilities\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="BRepFilletAPI_MakeFillet2d_Extension.hxx">
+      <Filter>OCCExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="BRepOffsetAPI_MakeThickSolid_Extension.hxx">
+      <Filter>OCCExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="BRepAlgoAPI_IntSS.hxx">
+      <Filter>OCCExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="BRepAlgoAPI_IntCS.hxx">
+      <Filter>OCCExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="OCCFixTool.h">
+      <Filter>Utilities\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceOperationBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="GKAlgo.h">
+      <Filter>BaseKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="GKModel.h">
+      <Filter>BaseKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="GeomModelBuilder.h">
+      <Filter>BaseKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="xdAcisArchive.h">
+      <Filter>BaseKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="NAME_TAG.h">
+      <Filter>BaseKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="xdModelingUtils.h">
+      <Filter>BaseKernel</Filter>
+    </ClInclude>
+    <ClInclude Include="OccAlgo.h">
+      <Filter>AppModel</Filter>
+    </ClInclude>
+    <ClInclude Include="EdgeOperationBuilder.h">
+      <Filter>Utilities\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="Geom_BoundedMathSurface.hxx">
+      <Filter>OCCExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="AssemblyBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OccApplication.cpp">
+      <Filter>AppModel</Filter>
+    </ClCompile>
+    <ClCompile Include="OccModel.cpp">
+      <Filter>AppModel</Filter>
+    </ClCompile>
+    <ClCompile Include="OccModelBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="LabelShapeAdapter.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="OccShapeBuilder.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeShapeBuilder.cpp">
+      <Filter>Utilities\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceShapeBuilder.cpp">
+      <Filter>Utilities\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidShapeBuilder.cpp">
+      <Filter>Utilities\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShapeBuilder.cpp">
+      <Filter>Utilities\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="IOShapeBuilder.cpp">
+      <Filter>Utilities\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="BooleanShapeBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="FilletShapeBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformShapeBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="exprtk_benchmark.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="SweepShapeBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="Geom_BoundedMathCurve.cxx">
+      <Filter>OCCExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetShapeBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeOperationBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="LabelUtilities.cpp">
+      <Filter>Utilities\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="OCCBasicTools.cpp">
+      <Filter>Utilities\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeUtilities.cpp">
+      <Filter>Utilities\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="BRepFilletAPI_MakeFillet2d_Extension.cxx">
+      <Filter>OCCExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="BRepOffsetAPI_MakeThickSolid_Extension.cxx">
+      <Filter>OCCExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="BRepAlgoAPI_IntSS.cxx">
+      <Filter>OCCExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="BRepAlgoAPI_IntCS.cxx">
+      <Filter>OCCExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="OCCFixTool.cpp">
+      <Filter>Utilities\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceOperationBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="OccAlgo.cpp">
+      <Filter>AppModel</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeOperationBuilder.cpp">
+      <Filter>Utilities\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="Geom_BoundedMathSurface.cxx">
+      <Filter>OCCExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="assemblebuilder.cpp">
+      <Filter>Utilities\Assembly</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

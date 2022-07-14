@@ -1,0 +1,47 @@
+------ Copying header files to ..\..\xdp\include\base2 ...
+AcisApplication.h
+AcisModel.h
+AcisModelBuilder.h
+BooleanShapeBuilder.h
+EdgeOperationBuilder.h
+EdgeShapeBuilder.h
+EnumAndStruct.h
+FaceOperationBuilder.h
+FaceShapeBuilder.h
+FilletShapeBuilder.h
+GeomModelBuilder.h
+GKAlgo.h
+GKModel.h
+IOShapeBuilder.h
+LabelShapeAdapter.h
+LabelUtilities.h
+OccAlgo.h
+OccApplication.h
+OCCBasicTools.h
+OCCFixTool.h
+OccModel.h
+OccModelBuilder.h
+OccShapeBuilder.h
+OffsetShapeBuilder.h
+PrimShapeBuilder.h
+ShapeOperationBuilder.h
+ShapeUtilities.h
+SolidShapeBuilder.h
+SweepShapeBuilder.h
+TransformShapeBuilder.h
+VertexShapeBuilder.h
+xdAcisArchive.h
+xdModelingDataType.h
+xdModelingHeader.h
+xdModelingUtils.h
+已复制        35 个文件。
+------ Copying copy xdModeling library to ..\..\x64\Debug ...
+..\..\xdp\lib\win64d\cbm.lib
+..\..\xdp\lib\win64d\memtrack.lib
+..\..\xdp\lib\win64d\xd.lib
+..\..\xdp\lib\win64d\xdModeling.lib
+已复制         4 个文件。
+..\..\xdp\product\win64d\bin\xdModeling.dll
+..\..\xdp\product\win64d\bin\xdModeling.ilk
+..\..\xdp\product\win64d\bin\xdModeling.pdb
+已复制         3 个文件。
