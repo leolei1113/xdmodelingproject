@@ -311,6 +311,9 @@ public:
 
     static bool findFatherLabelAccordingToType(TDF_Label currentlabel,
         TopAbs_ShapeEnum type, TDF_Label& findlabel);
+
+    static bool FindTypeLevelFatherLabel(TDF_Label& inputlabel, TopAbs_ShapeEnum type, TopoDS_Shape& currentshape);
+
 };
 
 #endif

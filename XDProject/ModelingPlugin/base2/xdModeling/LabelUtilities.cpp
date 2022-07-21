@@ -1105,3 +1105,24 @@ bool LabelUtilities::findFatherLabelAccordingToType(TDF_Label currentlabel,
         findlabel = currentlabel;
     return true;
 }
+
+bool LabelUtilities::FindTypeLevelFatherLabel(TDF_Label& inputlabel, TopAbs_ShapeEnum type, TopoDS_Shape& currentshape)
+{
+	TopoDS_Shape testshape = getLabelShape(inputlabel);
+	TopAbs_ShapeEnum currenttype = testshape.ShapeType();
+	if (currenttype > type)
+	{
+		inputlabel = inputlabel.Father();
+		FindTypeLevelFatherLabel(inputlabel, type, currentshape);
+		// ÷∂Ø÷’÷πµ›πÈ
+		if (!currentshape.IsNull())
+			return true;
+		currenttype = testshape.ShapeType();
+	}
+	else if (currenttype == type)
+	{
+		currentshape = getLabelShape(inputlabel);
+		return true;
+	}
+	return false;
+}

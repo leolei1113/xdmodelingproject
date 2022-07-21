@@ -1341,6 +1341,9 @@ protected:
 
     virtual bool insertHardPoints(void* entry, void* edge, std::vector<cmtPoint> points, const char* name,
         std::string& strPID, void*& entity);
+
+   public:
+    virtual bool newstitch(string facestostitchpids);
 };
 
 

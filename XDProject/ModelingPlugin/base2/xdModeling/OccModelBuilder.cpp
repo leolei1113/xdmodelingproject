@@ -8671,3 +8671,114 @@ bool OccModelBuilder::splitBodyByFace(void* entry, SplitFaceCreationInfos infos,
 
 	TheOCCApp.getCurrentModel()->addShapeToCacheByEntryOnSecondLevel(strPID, entity);
 }
+
+bool OccModelBuilder::newstitch(string facestostitchpids)
+{
+	COMMAND_BEGIN
+
+	try
+	{
+		std::vector<string> array;
+		int index = 0;
+		int ifcontinue = 0;
+		while (facestostitchpids.find("@")!=-1)
+		{
+			index = facestostitchpids.find("@");
+			string xstr = facestostitchpids.substr(0, index);
+			array.push_back(xstr);
+			facestostitchpids = facestostitchpids.substr(index + 1, facestostitchpids.length() - index);
+		}
+		array.push_back(facestostitchpids);
+
+		TDocStd_Document* curDoc = TheOCCApp.getCurrentModel()->getDoc();
+		Handle(TDF_Data) data = curDoc->GetData();
+		TDF_Label rootLabel = data->Root();
+
+		//find shape and label
+		LabelShapeAdapter adapter;
+
+		TopTools_ListOfShape shapeArray;
+
+		for (int i=0;i< array.size();i++)
+		{
+			TDF_Label foundLabel;
+			TopoDS_Shape foundShape;
+			TDF_Tool::Label(data, array[i].c_str(), foundLabel);
+			if (foundLabel.IsNull())
+			{
+				COMMAND_END
+					return false;
+			}
+			foundShape = LabelUtilities::getLabelShape(foundLabel);
+
+			shapeArray.Append(foundShape);
+		}
+
+		//Ñ°ÕÒcompoundºÍsolid
+		TDF_Label oneofchildlabel;
+		TDF_Tool::Label(data, array[0].c_str(), oneofchildlabel);
+		TDF_Label solidlabel = oneofchildlabel;
+		TDF_Label compoundlabel = oneofchildlabel;
+		TopoDS_Shape solidshape, compoundshape;
+		if (!LabelUtilities::FindTypeLevelFatherLabel(solidlabel, TopAbs_SOLID, solidshape) ||
+			!LabelUtilities::FindTypeLevelFatherLabel(compoundlabel, TopAbs_COMPOUND, compoundshape))
+			return false;
+
+		adapter.labelDiscreteToMap(compoundlabel);
+
+		BRep_Builder b;
+		b.Remove(compoundshape, solidshape);
+
+		TopoDS_Shape targetShape;
+		BooleanShapeBuilder shapeBuilder;
+
+		if (!shapeBuilder.volumeMarker(shapeArray))
+		{
+			if (!shapeBuilder.shapeSewing(shapeArray, true))
+			{
+				COMMAND_END
+					return false;
+			}
+			targetShape = shapeBuilder.getShape();
+			if (targetShape.IsNull())
+			{
+				COMMAND_END
+					return false;
+			}
+		}
+		else
+		{
+			targetShape = shapeBuilder.getShape();
+			if (targetShape.IsNull())
+			{
+				COMMAND_END
+					return false;
+			}
+		}
+		b.Add(compoundshape, targetShape);
+		adapter.replaceChildLabelWithCopiedShape(solidlabel, targetShape);
+		adapter.allocateLabelWithTopShape(compoundlabel, compoundshape);
+		adapter.linkRelatedLabels(compoundlabel);
+
+		// some infos for return;
+		TCollection_AsciiString anEntry;
+		TDF_Tool::Entry(compoundlabel, anEntry);
+		string strPID = anEntry.ToCString();
+
+		void* resEntity;
+		TheOCCApp.getCurrentModel()->deleteShapeToCacheByEntryOnSecond(strPID);
+		TheOCCApp.getCurrentModel()->addShapeToCacheByEntryOnSecondLevel(strPID, resEntity);
+
+		COMMAND_END
+
+			// 			TheOCCApp.saveAs(TheOCCApp.getCurrentModel(), "d:/text.cbf");
+
+			return true;
+	}
+	catch (...)
+	{
+		COMMAND_END
+
+			return false;
+	}
+}
